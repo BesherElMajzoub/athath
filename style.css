@@ -1,0 +1,182 @@
+    body {
+        font-family: 'Tajawal', sans-serif;
+        background-color: #FAF6EF;
+        margin: 0;
+        padding: 0;
+        color: #3A2E2A;
+        direction: rtl;
+    }
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 20px;
+        background-color: #F1E7DC;
+    }
+
+    header .text {
+        flex: 1 1 300px;
+    }
+
+    header h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+        color: #5A3E2B;
+    }
+
+    header p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    header a.button {
+        background-color: #2E7D32;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    header .image {
+        flex: 1 1 300px;
+        text-align: center;
+        position: relative;
+    }
+
+    header img {
+        max-width: 100%;
+        border-radius: 10px;
+        transition: opacity 1s ease-in-out;
+        opacity: 1;
+    }
+
+    header .call-button {
+        background-color: #D9A441;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        transition: background-color 0.3s ease-in-out;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    header .call-button:hover {
+        background-color: #c8952e;
+    }
+
+    .section {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .section h2 {
+        text-align: center;
+        font-size: 26px;
+        color: #5A3E2B;
+        margin-bottom: 30px;
+    }
+
+    .features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .features li {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+
+    .features li::before {
+        content: "✔️";
+        margin-left: 10px;
+        color: #2E7D32;
+    }
+
+    .faq {
+        background-color: #fff;
+        padding: 30px 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq h3 {
+        color: #5A3E2B;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .faq p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        background-color: #EFE8E2;
+        text-align: center;
+        padding: 20px;
+        font-size: 14px;
+    }
+
+    .sticky-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #2E7D32;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+    }
+
+    .sticky-call {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        /* وضعه في الزاوية اليسرى */
+        background-color: #D9A441;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    .sticky-call:hover {
+        background-color: #c8952e;
+    }
+
+    .sticky-call img {
+        width: 20px;
+        margin-right: 8px;
+        /* لأن الصفحة RTL */
+    }
+
+    .sticky-button img {
+        width: 20px;
+        margin-left: 8px;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
